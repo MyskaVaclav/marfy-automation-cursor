@@ -1,0 +1,5 @@
+node_modules
+.env
+logs
+dist/
+rock-galaxy-485711-k3-b897ddc4735b.json

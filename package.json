@@ -1,0 +1,30 @@
+{
+  "name": "bess-telemetry-report",
+  "version": "1.0.0",
+  "description": "BESS telemetry ingestion and daily reporting (ingest30m + dailyReport)",
+  "type": "module",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "ingest30m": "node dist/cli.js ingest30m",
+    "dailyReport": "node dist/cli.js dailyReport",
+    "clearSheet": "node dist/cli.js clearSheet",
+    "test": "node --no-warnings dist/test/harness.js",
+    "pretest": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "googleapis": "^128.0.0",
+    "nodemailer": "^6.9.8",
+    "puppeteer": "^21.6.1",
+    "safe-buffer": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/nodemailer": "^6.4.14",
+    "typescript": "^5.3.3"
+  }
+}
